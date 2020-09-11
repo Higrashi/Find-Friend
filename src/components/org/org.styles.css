@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto+Slab:wght@500&display=swap');
+
+
+/* .orgContainer {
+    border: 1px solid lightgray;
+    padding: 10px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: row;
+} */
+
+/* .orgInfo {
+    display: flex;
+    flex-direction: column;
+} */
+.aboutItem {
+    padding: 10px 10px 10px 0px !important;
+    border-bottom: 1px solid lightgray !important;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+
+.cardContainer {
+    border: 1px solid lightgrey;
+    margin-top: 10px;
+    position: relative;
+
+}
+
+.iconContainer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: lightseagreen;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardIcon {
+    width: 50px;
+    height: 50px;
+}
+
+.orgLink {
+    color: #0f4c75;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .iconContainer {
+        width: 50px;
+        height: 50px;
+    }
+
+    .cardIcon {
+        width: 45px;
+        height: 45px;
+    }
+
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .org-h1 {
+        margin-top: 40px;
+    }
+
+}

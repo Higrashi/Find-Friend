@@ -1,0 +1,144 @@
+.side-menu {
+   
+}
+
+.side-nav {
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: white;
+  border-right: 1px solid lightgrey;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 160px;
+
+  .close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    cursor: pointer;
+  }
+
+  a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    
+  }
+
+  a:active .side-nav {
+    background-color: black;
+  }
+}
+
+.side-menu-link {
+  text-decoration: none;
+  
+  transition:.1s opacity;
+}
+
+.sidemenu-btn {
+  background-color: lightseagreen !important;
+  color: whitesmoke !important;
+}
+
+.side-menu-button {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    cursor: pointer;
+    
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background-color: lightseagreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.side-menu-button-mob {
+  position: fixed;
+  top: 1%;
+  left: 1%;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+  z-index: 100;
+  background-color: none;
+
+}
+
+.side-menu-icon {
+    // padding-right: 10px;
+    
+    
+}
+
+.gym-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.MuiFormControl-root {
+  width: 80% !important;
+  margin: 20px 20px !important;
+}
+
+.sidemenu-btn {
+  margin-left: 20px !important;
+}
+
+.filter-icon {
+  
+  width: 55px;
+  height: 55px;
+ 
+}
+
+.side-menu-button:hover {
+  transform: rotate(360deg);
+}
+
+@media screen and (max-width: 1300px) {
+  .side-menu-button {
+    top: 13%;
+    left: 1%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  // .side-menu-button {
+  //   top: 12%;
+  //   left: 1%;
+  //   width: 50px;
+  //   height: 50px;
+  // }
+
+  .filter-icon {
+  
+    width: 50px;
+    height: 50px;
+   
+  }
+
+  .sidemenu-btn {
+    padding: 10px !important;
+    min-width: 80% !important;
+  } 
+}

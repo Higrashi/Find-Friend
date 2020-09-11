@@ -1,0 +1,48 @@
+.small-icon-box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px;
+}
+
+.icon-info-container {
+    background-color: lightseagreen;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 0px;
+}
+
+
+
+.small-icon-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.small-icon-span {
+    // line-height: 2.3rem;
+    margin: 1px 10px;
+    color: #718096;
+    font-size: 1.1rem;
+}
+
+
+@media screen and (max-width: 500px) {
+
+
+    .icon-info-container {
+        width: 33px;
+        height: 33px;
+    }
+
+    .small-icon-span {
+        line-height: 2rem;
+        margin: 0px 0px 3px 10px;
+    }
+
+
+}

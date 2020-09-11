@@ -1,0 +1,16 @@
+.main-photo-mobile {
+    width: 100%;
+    cursor: zoom-in;
+}
+
+.photo-mobile-row {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.photo-mobile {
+    width: 15%;
+    margin-left: 5px;
+    cursor: zoom-in;
+}

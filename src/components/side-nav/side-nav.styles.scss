@@ -1,0 +1,43 @@
+.side-header-icon {
+  font-size: 2rem;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.side-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0px;
+  height: 100vh;
+  background-color: #fafafa;
+  transition: .5s;
+  z-index: 1000;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+.side-header-links {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.side-header-link {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  padding: 10px;
+}
+
+
+.side-close-container {
+  margin-left: 80%;
+  margin-top: 10px;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.side-header-btn {
+  padding-top: 10px;
+}

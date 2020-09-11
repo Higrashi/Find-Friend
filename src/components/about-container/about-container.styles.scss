@@ -1,0 +1,55 @@
+
+.littleBox {
+    padding: 10px;
+    border: 1px solid lightgray;
+    margin: 5px !important;
+    background: #eeeeee;
+    border-radius: 10px;
+    color: #393e46;
+}
+
+.aboutItem {
+    padding: 10px 10px 10px 0px !important;
+    border-bottom: 1px solid lightgray !important;
+    font-family: 'Open Sans', sans-serif !important;
+    color: #403e3e;
+}
+
+.aboutSpan {
+    color: black;
+    font-weight: 900 !important;
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+}
+
+.cardContainer {
+    border: 1px solid lightgrey;
+    margin-top: 10px;
+    position: relative;
+}
+
+.iconContainer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: lightseagreen;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardIcon {
+    width: 50px;
+    height: 50px;
+}
+
+.info-breadcrumbs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
