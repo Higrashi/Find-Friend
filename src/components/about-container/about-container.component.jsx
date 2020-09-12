@@ -4,7 +4,7 @@ import IconComponent from '../icon/icon.component';
 import './about-container.styles.scss'
 
 const AboutCountainer = ({animal}) => {
-
+    // Main info about animal
     return (
         
          <div>

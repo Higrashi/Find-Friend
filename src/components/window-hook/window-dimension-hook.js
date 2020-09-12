@@ -1,6 +1,9 @@
 import {useState, useEffect} from 'react';
 
 function getWindowDimensions(){
+
+    // Used to dynamicly get window size
+    
     const {innerWidth: width, innerHeight: height} = window;
     return {
         width,

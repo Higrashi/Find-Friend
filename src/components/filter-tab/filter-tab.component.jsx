@@ -3,7 +3,7 @@ import {Modal} from '@material-ui/core';
 import './filter-tab.styles.css';
 
 const FilterTab = ({open, onClose, onOpen}) => {
-
+    
     return (
         <div className='filterTab'>
             <button type="button" onClick={onOpen}>

@@ -15,17 +15,24 @@ import './animal-page.styles.css';
 
 
 const AnimalPage = (props) => {
-    let [animal, setAnimal] = useState()
-    let [id, setId] = useState()
-    let [org, setOrg] = useState()
-    let [location, setLocation] = useState({})
+    // animal state
+    let [animal, setAnimal] = useState();
+    // organization id state
+    let [id, setId] = useState();
+    // organization state
+    let [org, setOrg] = useState();
+    // location state
+    let [location, setLocation] = useState({});
+    // modal window state 
     let [modal, setModal] = useState({
         active: false,
         src: ''
-    })
+    });
     let animalID = props.match.params.id;
     const {width} = useWindowDimensions();
-    console.log('This is ID --->',props.match.params.id)
+   
+    // on component mount and update make request to Petfinder
+    // with id of the current animal
     useEffect(() => {
         const fetchAnimal = async () => {
             const fetchedAnimal = await getAnimal(animalID);
@@ -36,7 +43,8 @@ const AnimalPage = (props) => {
         console.log(id, org) 
     },[])
 
-    
+    // if there is id of organization (or it updates), make request to Petfinder
+    // and get oraniztion data  
     useEffect(() => {
         const getOrg = async () => {
                 
@@ -53,6 +61,8 @@ const AnimalPage = (props) => {
       console.log('data===>',org)
     },[id])
 
+    // If there is organization (or it updates), then make request
+    //to get address of organixation
     useEffect(() => {
         
             if(org) {
@@ -68,24 +78,15 @@ const AnimalPage = (props) => {
                 
                 getAddres()
             }
-        
-           
-        
-      
-     
-       
     },[org])
     console.log(animal)
    
+    // handle open/close modal window with photo
     const handlePhoto = (e) => {
         let imgId = e.target.id
-        
-       
-     
         setModal({ active: true, src: animal.photos[imgId].full})
-        
     }
-
+    // close modal window
     const handleClose = () => {
         setModal(() =>{
             return {

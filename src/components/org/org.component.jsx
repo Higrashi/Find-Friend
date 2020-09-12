@@ -5,7 +5,7 @@ import './org.styles.css';
 
 
 const OrgContainer = ({org}) => {
-
+   // Information of organization where the animal is contained
     return (
         <div className='orgContainer'>
 

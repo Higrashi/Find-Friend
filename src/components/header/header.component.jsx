@@ -16,11 +16,9 @@ const Header = () => {
                     <SideNav /> :
                         <div className='navBox'>
                         <Link to='/' className='navLink'>Home</Link>
-                        <Link to='/all' className='navLink'>All</Link>
-                        <Link to='/cats-page' className='navLink'>Cats</Link>
-                        <Link to='/dogs-page' className='navLink'>Dogs</Link>
-                        {/* <Link to='/animals/cat' className='navLink'>Cats</Link>
-                         <Link to='/animals/dog' className='navLink'>Dogs</Link> */}
+                        <Link to='/animals/all' className='navLink'>All animals</Link>
+                        <Link to='/animals/cat' className='navLink'>Cats</Link>
+                        <Link to='/animals/dog' className='navLink'>Dogs</Link>
                     </div>
                 }
 

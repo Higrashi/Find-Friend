@@ -5,16 +5,13 @@ import './google-map.styles.css'
 
 const GoogleMap = ({location}) => {
 
+    // Google map component, show up only if there is location from geocode
+
+     // Location state 
      const [defLocation,setDefLocation] = useState({
          lat: location.lat,
          lng: location.lng
      }) 
-
-    //  const googleApi = process.env.REACT_APP_GOOGLE_MAPS_KEY;
-    
-
-
-    
 
     return (
         <div className='mapContainer'>

@@ -1,7 +1,6 @@
 import {Client} from '@petfinder/petfinder-js';
-// const petfinderApi = process.env.REACT_APP_PETFINDER_API;
-// const petfinderSecret = process.env.REACT_APP_PETFINDER_SECRET;
-let client = new Client({apiKey: "msoH5wpzdE229wIRzF4M4PUM61SsKRf8wXzLdGVvPeFLGUvRPb", secret: process.env.REACT_APP_PETFINDER_KEY})
+
+let client = new Client({apiKey: process.env.REACT_APP_PETFINDER_API_KEY, secret: process.env.REACT_APP_PETFINDER_SECRET_KEY})
 
 export const getAnimals = async (page) => {
 
@@ -15,6 +14,7 @@ export const getAnimals = async (page) => {
        
 }
 
+// Get animal by id
 export const getAnimal = async (id) => {
 
     try {
@@ -26,6 +26,7 @@ export const getAnimal = async (id) => {
    
 }
 
+// Get animals by specific request
 export const getOptionalAnimal = async (page, query) => {
     if(page) {
         try {
@@ -45,6 +46,7 @@ export const getOptionalAnimal = async (page, query) => {
    
 }
 
+// Get data of organixation where the animal is contained
 export const getOrganization = async (name) => {
     if(name) {
        const response = await client.organization.show(name);
@@ -53,6 +55,7 @@ export const getOrganization = async (name) => {
     
 }
 
+// Get animals types
 export const getTypes = async () => {
     const response = await client.animalData.types()
     return response
