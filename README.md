@@ -6,7 +6,7 @@ allows you to look over 150,000 profiles of animlas with user friendly interface
 ## IMPORTANT
 To run this app you will need:
 1. Your own perfinder account and petfinder api keys
-2. Yout own google account and GoogleMaps api key
+2. Your own google account and GoogleMaps api key
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
