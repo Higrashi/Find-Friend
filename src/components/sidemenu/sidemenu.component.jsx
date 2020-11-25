@@ -6,26 +6,19 @@ import "./sidemenu.styles.scss";
 
 function SideMenu ({onChange, query, onSubmit, type}) {
 
-    
+    // Side menu open/close state
     const [isCliked, setIsclicked] = useState(!false);
-    
-    
+    // current screen width 
     const {width} = useWindowDimensions();
-    const navWidth = width > 1000 ? '350px' : '250px';
-    const handleClick = (e) => {
-     
-        setIsclicked(!isCliked);
-       const sideNav = document.querySelector('.side-nav');
-
-        isCliked ? sideNav.style.width = navWidth :  sideNav.style.width = '0px'
-      
+    // Side menu open/close handler
+    const handleClick = () => {
+     setIsclicked(!isCliked);
     }
 
-    
+    // handle search submit
     const handleSubmit = () => {
         onSubmit()
-        const sideNav = document.querySelector('.side-nav');
-        sideNav.style.width = '0px'
+        setIsclicked(!isCliked);
     }
  
 
@@ -34,7 +27,7 @@ function SideMenu ({onChange, query, onSubmit, type}) {
 
         
            
-        <div className='side-nav' >
+        <div className={`side-nav ${isCliked ? 'sidenav-active' : ''}`} >
         <a href='#' className="close-btn" onClick={handleClick}>&times;</a>
 
         

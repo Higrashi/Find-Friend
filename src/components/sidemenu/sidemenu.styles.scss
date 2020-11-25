@@ -4,7 +4,7 @@
 
 .side-nav {
   height: 100%;
-  width: 0px;
+  width: 351px;
   position: fixed;
   z-index: 1000;
   top: 0;
@@ -14,6 +14,7 @@
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 160px;
+  transform: translateX(-100%);
 
   .close-btn {
     position: absolute;
@@ -36,6 +37,10 @@
   a:active .side-nav {
     background-color: black;
   }
+}
+
+.sidenav-active {
+  transform: translateX(0);
 }
 
 .side-menu-link {

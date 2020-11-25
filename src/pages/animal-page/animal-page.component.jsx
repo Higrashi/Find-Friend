@@ -40,7 +40,6 @@ const AnimalPage = (props) => {
             setId(fetchedAnimal.data.animal.organization_id)
         }
         fetchAnimal()
-        console.log(id, org) 
     },[])
 
     // if there is id of organization (or it updates), make request to Petfinder
@@ -51,14 +50,13 @@ const AnimalPage = (props) => {
             try {
               let resp = await getOrganization(id)
               setOrg(resp.data.organization)
-              console.log(id, org)
+              
             } catch (err) {
               console.log(err)
             }
              
     }
       getOrg()
-      console.log('data===>',org)
     },[id])
 
     // If there is organization (or it updates), then make request
@@ -79,9 +77,8 @@ const AnimalPage = (props) => {
                 getAddres()
             }
     },[org])
-    console.log(animal)
-   
-    // handle open/close modal window with photo
+    
+   // handle open/close modal window with photo
     const handlePhoto = (e) => {
         let imgId = e.target.id
         setModal({ active: true, src: animal.photos[imgId].full})

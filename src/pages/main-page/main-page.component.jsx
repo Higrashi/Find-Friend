@@ -1,8 +1,8 @@
 import React from 'react';
-import CatImage from '../../assets/images/main-logo.jpg';
 import IconComponent from '../../components/icon/icon.component';
 import IconInfo from '../../components/icon-info/icon-info.component';
-import {Card, CardContent} from '@material-ui/core';
+import dogImage from '../../assets/images/dog.png';
+
 import './main-page.styles.scss';
 
 const MainPage = () => {
@@ -14,7 +14,7 @@ const MainPage = () => {
             <div className="logo-container">
                 <div className="main-image-container">
                     <div className="image-box">
-
+                         <img src={dogImage} className='dog-image' alt=""/>   
                         </div>
                 </div>
                
@@ -26,7 +26,7 @@ const MainPage = () => {
                     </div>
                   
                     <h1>Find Friend</h1>
-                    <p>Find animals that search a new home among over 150,000 profiles and nearly 11,000 animal shelters and adoption organizations across from the USA, Canada, and Mexico</p>   
+                    <p>Find animals that search a new home among over 150,000 profiles and nearly 11,000 animal shelters and adoption organizations across the USA, Canada, and Mexico</p>   
                    <IconInfo type='App' text='Daily updated profiles'/>
                    <IconInfo type='DogGreen' text='Find out important information about animals'/>
                    <IconInfo type='VisitGreen' text='Learn about shelters and adoption organizations'/>
