@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container, Grid} from '@material-ui/core';
 import NoImage from '../../assets/images/no-image.jpg';
-import './photo-box-mobile.styles.scss';
+import './photo-box-mobile.styles.css';
 
 const PhotoBoxMobile = ({photos, onClick}) => {
 

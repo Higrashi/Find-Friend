@@ -1,6 +1,6 @@
 import {Client} from '@petfinder/petfinder-js';
 
-let client = new Client({apiKey: process.env.REACT_APP_PETFINDER_API_KEY, secret: process.env.REACT_APP_PETFINDER_SECRET_KEY})
+let client = new Client({apiKey: process.env.REACT_APP_PETFINDER_API_KEY , secret: process.env.REACT_APP_PETFINDER_SECRET_KEY})
 
 export const getAnimals = async (page) => {
 

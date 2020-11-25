@@ -1,7 +1,7 @@
 import React from 'react';
 import IconComponent from '../icon/icon.component';
 
-import './icon-info.styles.scss';
+import './icon-info.styles.css';
 
 
 const IconInfo = ({type, text}) => {

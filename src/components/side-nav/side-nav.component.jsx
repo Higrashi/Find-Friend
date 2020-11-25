@@ -1,8 +1,8 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import {Link} from "react-router-dom";
 
 
-import "./side-nav.styles.scss";
+import "./side-nav.styles.css";
 
 function SideNav () {
 

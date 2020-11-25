@@ -24,10 +24,12 @@
 }
 
 .small-icon-span {
-    // line-height: 2.3rem;
+    line-height: 2.3rem;
     margin: 1px 10px;
     color: #718096;
     font-size: 1.1rem;
+    
+    font-family:'Work Sans', Sans-Serif;
 }
 
 

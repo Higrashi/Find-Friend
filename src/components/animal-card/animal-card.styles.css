@@ -31,11 +31,11 @@
 
 .nameText {
     margin-top: 5px !important;
-    font-size: 1.2rem !important;
+    font-size: 1.4rem !important;
     font-weight: 700 !important;
     color: #383535 !important;
     letter-spacing: .1rem !important;
-    font-family: 'Trocchi', serif !important;
+    font-family: 'Neuton', Serif !important;
 }
 
 .link {
@@ -44,7 +44,8 @@
     font-size: 1.3rem;
     margin-top: 10px;
     transition: .4s;
-    
+    font-family: 'Work Sans', Sans-Serif;
+
 }
 
 .arrow {

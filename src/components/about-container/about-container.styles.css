@@ -6,12 +6,14 @@
     background: #eeeeee;
     border-radius: 10px;
     color: #393e46;
+    font-family: 'Work Sans', Sans-Serif !important;
 }
 
 .aboutItem {
     padding: 10px 10px 10px 0px !important;
     border-bottom: 1px solid lightgray !important;
-    font-family: 'Open Sans', sans-serif !important;
+    font-size: 1.1rem !important;
+    font-family:'Work Sans', Sans-Serif !important;
     color: #403e3e;
 }
 

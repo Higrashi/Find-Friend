@@ -1,7 +1,7 @@
 import React from 'react';
 import {Typography, Card, CardContent} from '@material-ui/core';
 import IconComponent from '../icon/icon.component';
-import './about-container.styles.scss'
+import './about-container.styles.css'
 
 const AboutCountainer = ({animal}) => {
     // Main info about animal

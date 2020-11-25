@@ -1,6 +1,6 @@
 import React from 'react';
 import NoImage from '../../assets/images/no-image.jpg'
-import './photo-box.styles.scss';
+import './photo-box.styles.css';
 
 const PhotoBox = ({photos, onClick}) => {
 
